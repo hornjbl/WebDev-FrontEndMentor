@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville:wght@400;700&family=Outfit:wght@400;700&display=swap");
+
 /* ====================================================================== */
 /* STANDARD CSS RESET START */
 /* ====================================================================== */
@@ -52,7 +54,62 @@ h6 {
 /* ====================================================================== */
 /* STANDARD CSS RESET END */
 /* ====================================================================== */
+:root {
+    --color-White: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(212, 45%, 89%);
+    --color-grayish-blue: hsl(220, 15%, 55%);
+    --color-dark-blue: hsl(218, 44%, 22%);
+}
 
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light-gray);
+}
+
+.div-card-component {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    width: 320px;
+    background-color: var(--color-White);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.div-qr-code {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+}
+
+.div-qr-code img {
+    width: 100%;
+}
+
+.div-card-text {
+    /* background-color: lightcoral; */
+    padding: 15px;
+}
+
+.h2-card-component-heading {
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.p-card-component-description {
+    margin-bottom: 0.8rem;
+}
+
+/* 					FOOTER					 */
 .attribution {
     font-size: 11px;
     text-align: center;
