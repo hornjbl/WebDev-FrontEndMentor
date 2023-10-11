@@ -1,0 +1,5 @@
+-   TODO: Watch [walkthrough video](https://youtu.be/B2WL6KkqhLQ?t=3405) to see how Kevil Powell updates the product image in the media query.
+    -   Enclose the `img` element with a `picture` element.
+    -   Add a `picture -> source` element
+    -   Add a `srcset` property in the `picture -> source` element
+    -   Add a `media` property in the `picture -> source` element and specify the media query

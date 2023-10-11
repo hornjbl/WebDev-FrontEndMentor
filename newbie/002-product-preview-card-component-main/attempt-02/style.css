@@ -1,0 +1,210 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/* ====================================================================== */
+/* STANDARD CSS RESET START */
+/* ====================================================================== */
+*,
+*::before,
+*::after {
+    /* 1. Use a more-intuitive box-sizing model */
+    box-sizing: border-box;
+}
+* {
+    /* 2. Remove default margin */
+    margin: 0;
+}
+/* Typographic tweaks! */
+body {
+    /* 3. Add accessible line-height */
+    /* 4. Improve text rendering */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    /* 5. Improve media defaults */
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    /* 6. Remove built-in form typography styles */
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* 7. Avoid text overflows */
+    overflow-wrap: break-word;
+}
+#root,
+#__next {
+    /* 8. Create a root stacking context */
+    isolation: isolate;
+}
+/* ====================================================================== */
+/* STANDARD CSS RESET END */
+/* ====================================================================== */
+
+/* 
+Mobile: 375px
+Desktop: 1440px
+ */
+
+:root {
+    --color-primary-dark-cyan: hsl(158, 36%, 37%);
+    --color-primary-cream: hsl(30, 38%, 92%);
+    --color-neutral-very-dark-blue: hsl(212, 21%, 14%);
+    --color-neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+
+    --font-family-accent: "Fraunces", serif;
+    --font-weight-accent: 700;
+    --font-family-regular: "Montserrat", sans-serif;
+    --font-weight-regular: 500;
+
+    --font-size-large: 2.25rem;
+    --font-size-regular: 1rem;
+    --font-size-small: 0.8rem;
+
+    --line-height-heading: 1em;
+    --line-height-paragraph: 1.5em;
+
+    --border-radius-card: 10px;
+    --border-radius-button: 5px;
+
+    --margin-bottom-wide: 1.25em;
+    --margin-bottom-narrow: 0.5em;
+
+    --padding-product-details: 1.2em;
+}
+
+/* GENERAL */
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    height: 100%;
+}
+
+/* CONTAINER */
+
+.product-container {
+    font-family: var(--font-family-regular);
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-paragraph);
+    background-color: var(--color-primary-cream);
+    color: var(--color-neutral-dark-grayish-blue);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER - CARD */
+
+.product-card {
+    background-color: var(--color-neutral-white);
+    max-width: 375px;
+    min-width: 250px;
+    border-radius: var(--border-radius-card);
+    overflow: hidden;
+}
+
+/* CONTAINER - CARD - DETAIL */
+
+.product-details {
+    padding: var(--padding-product-details);
+}
+
+/* CONTAINER - CARD - DETAIL - CATEGORY */
+
+.product-category {
+    font-size: var(--font-size-small);
+    margin-bottom: var(--margin-bottom-narrow);
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+}
+
+/* CONTAINER - CARD - DETAIL - TITLE */
+
+.product-title {
+    font-family: var(--font-family-accent);
+    font-weight: var(--font-weight-accent);
+    font-size: var(--font-size-large);
+    color: var(--color-neutral-very-dark-blue);
+    line-height: var(--line-height-heading);
+    margin-bottom: var(--margin-bottom-narrow);
+}
+
+/* CONTAINER - CARD - DETAIL - DESCRIPTION */
+
+.product-description {
+    margin-bottom: var(--margin-bottom-wide);
+}
+
+/* CONTAINER - CARD - DETAIL - PRICE */
+
+.product-price {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+    margin: var(--margin-bottom-wide) 0;
+}
+
+.product-price strong {
+    font-family: var(--font-family-accent);
+    font-size: var(--font-size-large);
+    color: var(--color-primary-dark-cyan);
+    margin-right: 0.75em;
+}
+
+.product-price em {
+    font-style: unset;
+    text-decoration: line-through;
+}
+
+/* CONTAINER - CARD - DETAIL - BUTTON */
+
+.product-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    color: var(--color-neutral-white);
+    background-color: var(--color-primary-dark-cyan);
+    border-radius: var(--border-radius-button);
+}
+
+.product-button img {
+    height: unset;
+    margin-right: 0.6em;
+}
+
+@media (min-width: 600px) {
+    .product-card {
+        display: flex;
+        min-width: unset;
+        max-width: 570px;
+    }
+
+    .product-card > * {
+        flex: 1;
+    }
+}
