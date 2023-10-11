@@ -2,7 +2,7 @@
 
 -   [ ] Read [How to get the most out of Frontend Mentor](https://medium.com/frontend-mentor/how-to-get-the-most-out-of-frontend-mentor-bdd6fdc25cb8)
 -   [ ] Watch [walkthrough video](https://youtu.be/B2WL6KkqhLQ?t=3405) for tips/improvements
-    -   [ ] How to update the product image using a media query.
+    -   [x] How to update the product image using a media query.
         -   Enclose the `img` element with a `picture` element.
         -   Add a `picture -> source` element
         -   Add a `srcset` property in the `picture -> source` element
@@ -26,9 +26,7 @@
 -   [ ] Style the button to give it a pointer icon, and change the color on hover.
 -   [ ] Shopping Cart Icon:
     -   [ ] Add the icon using css instead of in the HTML.
-
-## For Next Time:
-
--   The two sections of the card do not share 50% of the total card width in the desktop display. Need to figure out how to achieve this without introducing hard-coded widths.
+-   [ ] The two sections of the card do not share 50% of the total card width in the desktop display. Need to figure out how to achieve this without introducing hard-coded widths.
     -   After inspecting the elements, it seems to be the padding that I've added to the .product-details container that's causing that element to take up more than 50% of the horizontal space. Need to figure out how to counter this.
-    -       Kevin uses `display: grid;` in the card container, and then sets it to `grid-template-columns: 1fr 1fr;` in the media query.
+    -   [ ] Kevin uses `display: grid;` in the card container, and then sets it to `grid-template-columns: 1fr 1fr;` in the media query.
+-   [ ] Increase padding size and adjust font-sizes.

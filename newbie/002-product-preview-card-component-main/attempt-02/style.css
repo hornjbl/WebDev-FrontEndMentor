@@ -73,8 +73,8 @@ Desktop: 1440px
     --font-family-regular: "Montserrat", sans-serif;
     --font-weight-regular: 500;
 
-    --font-size-large: 2.25rem;
-    --font-size-regular: 0.95rem;
+    --font-size-large: 2.2rem;
+    --font-size-regular: 0.9rem;
     --font-size-small: 0.75rem;
 
     --line-height-heading: 1em;
@@ -86,7 +86,7 @@ Desktop: 1440px
     --margin-bottom-wide: 1.25em;
     --margin-bottom-narrow: 0.5em;
 
-    --padding-product-details: 1.2em;
+    --padding-product-details: 1.5em;
 }
 
 /* GENERAL */
