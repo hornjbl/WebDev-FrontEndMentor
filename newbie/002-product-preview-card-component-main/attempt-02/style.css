@@ -74,7 +74,7 @@ Desktop: 1440px
     --font-weight-regular: 500;
 
     --font-size-large: 2.25rem;
-    --font-size-regular: 0.9rem;
+    --font-size-regular: 0.95rem;
     --font-size-small: 0.75rem;
 
     --line-height-heading: 1em;
@@ -198,16 +198,10 @@ img {
 }
 
 @media (min-width: 600px) {
-    :root {
-        --font-size-regular: 1rem;
-    }
     .product-card {
-        display: flex;
+        display: grid;
         min-width: unset;
         max-width: 570px;
-    }
-
-    .product-card > * {
-        flex: 1;
+        grid-template-columns: 1fr 1fr;
     }
 }
