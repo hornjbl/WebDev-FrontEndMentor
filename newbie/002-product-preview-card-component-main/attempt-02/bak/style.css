@@ -74,8 +74,8 @@ Desktop: 1440px
     --font-weight-regular: 500;
 
     --font-size-large: 2.25rem;
-    --font-size-regular: 0.9rem;
-    --font-size-small: 0.75rem;
+    --font-size-regular: 1rem;
+    --font-size-small: 0.8rem;
 
     --line-height-heading: 1em;
     --line-height-paragraph: 1.5em;
@@ -119,7 +119,7 @@ img {
 
 .product-card {
     background-color: var(--color-neutral-white);
-    max-width: 350px;
+    max-width: 375px;
     min-width: 250px;
     border-radius: var(--border-radius-card);
     overflow: hidden;
@@ -198,9 +198,6 @@ img {
 }
 
 @media (min-width: 600px) {
-    :root {
-        --font-size-regular: 1rem;
-    }
     .product-card {
         display: flex;
         min-width: unset;
