@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&display=swap");
+
 /* ====================================================================== */
 /* STANDARD CSS RESET START */
 /* ====================================================================== */
@@ -54,25 +56,8 @@ h6 {
 /* ====================================================================== */
 
 /* 
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
 - Mobile: 375px
 - Desktop: 1440px
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraphs): 18px
-
-### Font
-
-- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
-- Weights: 500, 700, 800
 */
 
 :root {
@@ -94,25 +79,49 @@ The designs were created to the following widths:
     --col-neutral-pale-blue: hsl(221, 100%, 96%);
     --col-neutral-light-lavender: hsl(241, 100%, 89%);
     --col-neutral-dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* --font-family-fraunces: "Fraunces", serif;
+    --font-family-hanken-grotesk: "Hanken Grotesk", sans-serif;
+    --font-family-montserrat: "Montserrat", sans-serif; */
+    --font-family-main: "Hanken Grotesk", sans-serif;
+    --font-size-normal: 18px;
 }
 
-/* Provided by FM */
+footer {
+    background-color: lightcoral;
+}
+
+.main-container {
+    background-color: var(--col-neutral-white);
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-normal);
+}
+
+.result {
+    background-color: var(--col-primary-cobalt-blue);
+    text-align: center;
+    display: grid;
+    row-gap: 0.75em;
+    padding: 0.5em 2.75em 2em 2.75em;
+}
+
+.summary {
+    padding: 0.5em 1.75em 2em 1.75em;
+    display: grid;
+    gap: 1em;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.summary > * {
+    background-color: cyan;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-header {
-    background-color: lightgreen;
-}
-
-main {
-    background-color: lightsalmon;
-}
-
-footer {
-    background-color: lightcoral;
 }
