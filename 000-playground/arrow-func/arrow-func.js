@@ -63,13 +63,33 @@ console.log("Normal randomNumber1To10() function:");
 console.log(randomNumber1To10());
 
 // Is the same as the arrow func:
+let randomNumberResult1 = () => {
+    return Math.ceil(Math.random() * 10);
+};
 
-// document.addEventListener("click", randomNumber1To10);
+console.log("Arrow func randomNumberResult1:");
+console.log(randomNumberResult1());
 
-document.addEventListener("click", () => {
-    console.log("Clickety click click...");
+// Is the same as the simplified arrow func:
+
+let randomNumberResult2 = () => Math.ceil(Math.random() * 10);
+
+console.log("Arrow func randomNumberResult2:");
+console.log(randomNumberResult2());
+
+// ==============
+// Ex. 04
+// ==============
+
+document.addEventListener("click", function () {
+    console.log("Clickety click click from the FIRST ex 04 function...");
 });
 
-// document.addEventLinstener('click', function() => {
-// 	console.log('Click');
-// })
+// Is the same as the arrow func:
+
+document.addEventListener("click", () => {
+    console.log("Clickety click click from the SECOND ex 04 function");
+});
+
+// Is the same as the simplified arrow func:
+document.addEventListener("click", () => console.log("Clickety click click from the THIRD ex 04 function"));
