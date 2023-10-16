@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta
             name="viewport"
-            content="device-width=width, initial-scale=1.0"
+            content="width=device-width, initial-scale=1.0"
             name="description"
             content="Results summary component challenge on Frontend Mentor"
             name="keywords"
@@ -17,7 +17,7 @@
         <article class="main-container">
             <section class="result">
                 <h2 class="result-heading">Your Result</h2>
-                <p class="result-score"><span>76</span> of 100</p>
+                <p class="result-score"><span id="result-score">--</span> of 100</p>
                 <strong class="result-praise">Great</strong>
                 <p class="result-description">You scored higher than 65% of the people who have taken these tests.</p>
             </section>
@@ -26,13 +26,25 @@
                 <h2 class="summary-heading">Summary</h2>
 
                 <div class="summary-sections">
-                    <p class="summary-section summary-reaction">Reaction 80 / 100</p>
-                    <p class="summary-section summary-memory">Memory 92 / 100</p>
-                    <p class="summary-section summary-verbal">Verbal 61 / 100</p>
-                    <p class="summary-section summary-visual">Visual 72 / 100</p>
+                    <div class="summary-section summary-reaction">
+                        <p><img src="assets/images/icon-reaction.svg" alt="" />Reaction</p>
+                        <p><span class="strong" id="summary-reaction">--</span> / 100</p>
+                    </div>
+                    <div class="summary-section summary-memory">
+                        <p class="strong"><img src="assets/images/icon-memory.svg" alt="" />Memory</p>
+                        <p><span class="strong" id="summary-memory">--</span> / 100</p>
+                    </div>
+                    <div class="summary-section summary-verbal">
+                        <p class="strong"><img src="assets/images/icon-verbal.svg" alt="" />Verbal</p>
+                        <p><span class="strong" id="summary-verbal">--</span> / 100</p>
+                    </div>
+                    <div class="summary-section summary-visual">
+                        <p class="strong"><img src="assets/images/icon-visual.svg" alt="" />Visual</p>
+                        <p><span class="strong" id="summary-visual">--</span> / 100</p>
+                    </div>
                 </div>
 
-                <button>Continue</button>
+                <button class="score-button">Continue</button>
             </section>
         </article>
 
@@ -43,5 +55,6 @@
                 <p>Copyright &copy; δοῦλοι Χριστοῦ Inc.</p>
             </div>
         </footer>
+        <script src="app.js"></script>
     </body>
 </html>
