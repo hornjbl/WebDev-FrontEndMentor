@@ -93,3 +93,24 @@ document.addEventListener("click", () => {
 
 // Is the same as the simplified arrow func:
 document.addEventListener("click", () => console.log("Clickety click click from the THIRD ex 04 function"));
+
+// ==============
+// Ex. 05
+// ==============
+
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+
+    printName() {
+        setTimeout(function () {
+            console.log(`Normal function: ${this.name}`);
+        }, 100);
+
+        setTimeout(() => console.log(`Arrow function: ${this.name}`), 100);
+    }
+}
+
+let newPerson = new Person("Ben");
+newPerson.printName();
