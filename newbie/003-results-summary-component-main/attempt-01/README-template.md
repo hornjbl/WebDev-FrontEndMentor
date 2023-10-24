@@ -23,7 +23,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 Users should be able to:
 
 -   [x] View the optimal layout for the interface depending on their device's screen size
--   [ ] See hover and focus states for all interactive elements on the page
+-   [x] See hover and focus states for all interactive elements on the page
 -   [x] **Bonus**: Use the local JSON data to dynamically populate the content
 
 ### Screenshot

@@ -220,6 +220,11 @@ footer {
     color: var(--col-summary-reaction-font);
 }
 
+.summary-reaction {
+    background-color: var(--col-summary-reaction-background);
+    color: var(--col-summary-reaction-font);
+}
+
 .summary-memory {
     background-color: var(--col-summary-memory-background);
     color: var(--col-summary-memory-font);
