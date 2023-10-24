@@ -113,15 +113,14 @@ h6 {
 }
 
 footer {
-    background-color: lightcoral;
+	background-color: lightcoral;
 }
 
 /* main-container */
 
 .main-container {
+	min-width: 300px;
     background-color: var(--col-neutral-white);
-    height: 100vh;
-    width: 100vw;
     font-family: var(--font-family-main);
     font-size: var(--font-size-normal);
     color: var(--col-neutral-dark-gray-blue);
@@ -179,8 +178,7 @@ footer {
 /* main-container - summary */
 
 .summary {
-    height: 100%;
-    padding: 0.5em 1.75em 2em 1.75em;
+    padding: 1.5em;
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
@@ -239,7 +237,7 @@ footer {
 
 .score-button {
     border: none;
-    padding: 0.75em;
+    padding: 0.5em;
     color: var(--col-neutral-pale-blue);
     border-radius: 2em;
     background-color: var(--col-neutral-dark-gray-blue);
@@ -253,4 +251,30 @@ footer {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 550px) {
+	body {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.main-container {
+		display: flex;
+		max-width: 650px;
+		border-radius: var(--border-radius);
+		box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.summary {
+		flex: 1;
+		justify-content: space-between;
+	}
+
+	.result {
+		flex: 1;
+		border-radius: var(--border-radius);
+	}
 }

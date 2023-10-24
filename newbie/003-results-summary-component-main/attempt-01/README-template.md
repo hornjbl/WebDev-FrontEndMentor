@@ -22,19 +22,20 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 Users should be able to:
 
--   View the optimal layout for the interface depending on their device's screen size
--   See hover and focus states for all interactive elements on the page
--   **Bonus**: Use the local JSON data to dynamically populate the content
+-   [x] View the optimal layout for the interface depending on their device's screen size
+-   [ ] See hover and focus states for all interactive elements on the page
+-   [x] **Bonus**: Use the local JSON data to dynamically populate the content
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop](./design/desktop_screenshot.jpg)
+![Mobile](./design/mobile_screenshot.jpg)
 
 ### Links
 
--   Challenge URL: [Add challenge URL here](htts://challenge-url.com)
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Challenge URL: [Results summary component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
+-   Repository URL: [Github Repo](https://github.com/hornjbl/WebDev-FrontEndMentor/tree/main/newbie/003-results-summary-component-main/attempt-01)
+-   Live Site URL: [Live site URL](https://hornjbl.github.io/WebDev-FrontEndMentor/newbie/003-results-summary-component-main/attempt-01/index.html)
 
 ## My process
 
