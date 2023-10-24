@@ -243,6 +243,10 @@ footer {
     background-color: var(--col-neutral-dark-gray-blue);
 }
 
+.score-button:hover {
+	background-image: linear-gradient(var(--col-gradient-score-top), var(--col-gradient-score-bottom));
+}
+
 /* attribution */
 
 .attribution {
