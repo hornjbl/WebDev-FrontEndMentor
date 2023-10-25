@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* ====================================================================== */
+/* STANDARD CSS RESET START */
+/* ====================================================================== */
+*,
+*::before,
+*::after {
+    /* 1. Use a more-intuitive box-sizing model */
+    box-sizing: border-box;
+}
+* {
+    /* 2. Remove default margin */
+    margin: 0;
+}
+/* Typographic tweaks! */
+body {
+    /* 3. Add accessible line-height */
+    /* 4. Improve text rendering */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    /* 5. Improve media defaults */
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    /* 6. Remove built-in form typography styles */
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* 7. Avoid text overflows */
+    overflow-wrap: break-word;
+}
+#root,
+#__next {
+    /* 8. Create a root stacking context */
+    isolation: isolate;
+}
+/* ====================================================================== */
+/* STANDARD CSS RESET END */
+/* ====================================================================== */
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*
+- Mobile: 375px
+- Desktop: 1440px 
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+- Font size (paragraph): 16px
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+*/
+
+:root {
+    /* FONT VARIABLES */
+    --font-family: "Red Hat Display", sans-serif;
+    --font-size: 16px;
+    --font-weight-light: 500;
+    --font-weight-medium: 700;
+    --font-weight-heavy: 900;
+
+    /* COLOR VARIABLES */
+	--color-white: #ffffff;
+    --color-dark-blue: hsl(223, 47%, 23%);
+    --color-bright-blue: hsl(245, 75%, 52%);
+    --color-pale-blue: hsl(225, 100%, 94%);
+    --color-very-pale-blue: hsl(225, 100%, 98%);
+    --color-desaturated-blue: hsl(224, 23%, 55%);
+
+	--color-button-hover: hsl(245, 83%, 68%);
+
+	/* BORDER RADIUS */
+	--border-radius-main: 20px;
+	--border-radius-secondary: 10px;
+
+	/* SPACING */
+	--padding-main: 1.5em;
+	--padding-secondary: 0.75em;
+	--gap-main: 1.5em;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: var(--color-pale-blue);
+	font-size: var(--font-size);
+}
+
+.order-container {
+    font-family: var(--font-family);
+	color: var(--color-desaturated-blue);
+	width: 330px;
+	background-color: var(--color-white);
+	text-align: center;
+	border-radius: var(--border-radius-main);
+	overflow: hidden;
+	box-shadow: 0px 20px 40px var(--color-desaturated-blue);
+}
+
+.order-container h2, .order-container h3 {
+	color: var(--color-dark-blue);
+}
+
+.order-summary {
+	padding: var(--padding-main);
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-main);
+}
+
+.order-summary > a {
+	font-weight: var(--font-weight-medium);
+	text-decoration: none;
+	color: var(--color-desaturated-blue);
+}
+
+.order-summary > a:hover {
+	color: var(--color-dark-blue);
+}
+
+.order-summary p {
+	padding: 0 0.5em;
+}
+
+.order-summary button {
+	border: none;
+	background-color: var(--color-bright-blue);
+	color: var(--color-very-pale-blue);
+	border-radius: var(--border-radius-secondary);
+	padding: var(--padding-secondary);
+	box-shadow: 0px 20px 10px var(--color-pale-blue);
+}
+
+.order-summary button:hover {
+	cursor: pointer;
+	background-color: var(--color-button-hover);
+}
+
+.order-plan {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-very-pale-blue);
+	justify-content: space-between;
+	padding: 0.75em;
+	border-radius: var(--border-radius-secondary);
+}
+
+.order-plan h3 {
+	font-size: 1rem;
+}
+
+.order-plan p {
+	padding: 0;
+}
+
+.order-plan a {
+	font-weight: var(--font-weight-medium);
+	text-decoration: underline;
+	margin-left: 30px;
+}
+
+.order-plan a:hover {
+	color: var(--color-desaturated-blue);
+	text-decoration: none;
+}
