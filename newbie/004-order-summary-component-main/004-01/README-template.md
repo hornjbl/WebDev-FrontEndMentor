@@ -34,8 +34,8 @@ Users should be able to:
 ### Links
 
 -   Challenge URL: [Order summary component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
--   Repository URL: [Github Repo](https://github.com/hornjbl/WebDev-FrontEndMentor/tree/main/newbie/004-order-summary-component-main/attempt-01)
--   Live Site URL: [Live site URL](https://hornjbl.github.io/WebDev-FrontEndMentor/newbie/004-order-summary-component-main/attempt-01/index.html)
+-   Repository URL: [Github Repo](https://github.com/hornjbl/WebDev-FrontEndMentor/tree/main/newbie/004-order-summary-component-main/004-01)
+-   Live Site URL: [Live site URL](https://hornjbl.github.io/WebDev-FrontEndMentor/newbie/004-order-summary-component-main/004-01/index.html)
 
 ## My process
 
