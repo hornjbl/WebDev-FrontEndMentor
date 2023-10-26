@@ -1,0 +1,190 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+:root {
+    /* FONTS */
+    --font-family: "Red Hat Display", sans-serif;
+    /* --font-size-paragraph: 1rem; */
+    --font-size-paragraph: 0.95rem;
+
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    /* COLORS */
+    --color-link-color: hsl(246, 50%, 45%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-very-pale-blue: hsl(225, 100%, 98%);
+    --color-pale-blue: hsl(225, 100%, 94%);
+    --color-desaturated-blue: hsl(224, 23%, 55%);
+
+    --color-button-hover: hsl(245, 83%, 68%);
+
+    --color-bright-blue: hsl(245, 75%, 52%);
+    --color-bright-blue-transparent: rgba(56, 41, 224, 0.15);
+    --color-dark-blue: hsl(223, 47%, 23%);
+
+    /* RADIUSSES */
+    --border-radius-main: 1em;
+    --border-radius-secondary: 0.5em;
+
+    /* SPACING */
+    --padding-mobile-vertical: 2em;
+    --padding-mobile-horizontal: 1.5em;
+    --gap-mobile: 1.5em;
+
+    --padding-desktop-vertical: 2em;
+    --padding-desktop-horizontal: 1.5em;
+    --gap-desktop: 1.75em;
+}
+
+/* 
+TODO
+[x] Button shadow
+[x] Card shadow
+[x] Active states
+[x] Desktop responsiveness
+[x] Padding on paragraph
+[x] Line height
+[x] Link passive styling
+[x] Fix background image positioning & color
+*/
+
+.component-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background-image: url("./images/pattern-background-mobile.svg");
+	background-position: top;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: var(--color-pale-blue);
+}
+
+.order-summary-container {
+    background-color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-paragraph);
+    color: var(--color-desaturated-blue);
+    text-align: center;
+    border-radius: var(--border-radius-main);
+    overflow: hidden;
+    max-width: 21.5em;
+    box-shadow: 0 1.5em 2em var(--color-bright-blue-transparent);
+}
+
+.order-summary-container h2,
+.order-summary-container h3 {
+    color: var(--color-dark-blue);
+    font-weight: var(--font-weight-black);
+}
+
+.order-summary-banner {
+    width: 100%;
+    object-fit: cover;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-mobile);
+    padding: var(--padding-mobile-vertical) var(--padding-mobile-horizontal);
+}
+
+.order-summary * {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.order-summary > p {
+    padding: 0 0.75em;
+}
+
+.order-summary a {
+    font-weight: var(--font-weight-bold);
+}
+
+.order-summary button {
+    border: none;
+    padding: 0.75em;
+    background-color: var(--color-bright-blue);
+    color: var(--color-pale-blue);
+    border-radius: var(--border-radius-secondary);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0.5em;
+    box-shadow: 0 1.5em 1em var(--color-bright-blue-transparent);
+}
+
+.order-summary button:hover {
+    background-color: var(--color-button-hover);
+    cursor: pointer;
+}
+
+.order-summary-plan {
+    background-color: var(--color-very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius-secondary);
+    padding: 0.75em;
+}
+
+.order-summary-plan a {
+    font-size: 0.9rem;
+    color: var(--color-link-color);
+}
+
+.order-summary-plan a:hover {
+    color: var(--color-button-hover);
+    text-decoration: none;
+}
+
+.order-summary-plan-price-icon {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.order-summary-plan-price h3 {
+    font-size: 1rem;
+}
+
+.order-summary-cancel-order {
+    text-decoration: none;
+    color: var(--color-desaturated-blue);
+}
+
+.order-summary-cancel-order:hover {
+    color: var(--color-dark-blue);
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+    .component-container {
+        background-image: url("./images/pattern-background-desktop.svg");
+    }
+
+    .order-summary-container {
+        max-width: 26.7em;
+    }
+    .order-summary {
+        gap: var(--gap-desktop);
+        padding: var(--padding-desktop-vertical) var(--padding-desktop-horizontal);
+    }
+
+    .order-summary-plan {
+        padding: 1.5em;
+    }
+}

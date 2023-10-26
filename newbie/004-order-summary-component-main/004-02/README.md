@@ -32,6 +32,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 -	See [Should I change the default HTML font-size to 62.5%?](https://fedmentor.dev/posts/rem-html-font-size-hack/)
 -	See [How to plan your HTML (1): Product Preview Card](https://fedmentor.dev/posts/html-plan-product-preview/)
 -	See [Recommended Frontend Mentor challenge order for junior devs](https://fedmentor.dev/posts/newbie-fm-challenge-order/)
+-	See [Are You Making These CSS Height Mistakes?](https://www.youtube.com/watch?v=-sF5KsEo6gM)
 
 ## Overview
 
@@ -39,21 +40,36 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 -   [ ] View the optimal layout for the interface depending on their device's screen size
 -   [ ] See hover and focus states for all interactive elements on the page
--   [ ] **Bonus**: Use the local JSON data to dynamically populate the content
--   [ ] Do not use fixed widths or heights, but rather min/max width/height
--	[ ] Figure out, if the design specifies a font-size, where this should be set.
+-   [x] **Bonus**: Use the local JSON data to dynamically populate the content
+-	[ ] Width/height:
+	-   [ ] Be careful when using fixed widths or heights. Give preference to min/max width/height. (I again used height instead of min-height on the main container. This causes issues when the content starts getting bigger. NOTE TO SELF!)
+	-	[x] When specifying fixed or min/max sizing, give preference to relative units.
+	-	[x] Use dvh instead of vh.
+	-	[x] Do not set full width (100vw) because it is not necessary.
+	-	[x] If you want it to take up all the remaining space of the container (vertically), set it to flex with column direction and flex-grow: 1.
+-	[x] Fonts:
+	-	[x] Figure out, if the design specifies a font-size, where this should be set.
+	-	[x] Font-family import in HTML and not in CSS import.
+	-	[x] Do not use fixed font-size units.
+-	[x] Ensure the image fits the element correctly.
+-	[x] Research and use a good standard reset.
+	-	[x] See [CREATE A CSS RESET STYLESHEET](https://www.youtube.com/watch?v=5e0wuvhxLk4)
 -	[ ] Test the final result on mobile device, both landscape and portrait.
+-	[ ] Research and implement "landscapes".
+	- 	[ ] See [Coding for Beginners: Using Aria Landmarks](https://www.youtube.com/watch?v=D3FpMIGGFXQ)
+	-	[ ] See [HTML Landmark Roles Screen Reader Demo](https://www.youtube.com/watch?v=zmVyUrhRoU0)
 
 ### Screenshot
 
-![Desktop](./screenshot/desktop.jpg)
-![Mobile](./screenshot/mobile.jpg)
+![Desktop](./design/desktop_screenshot.jpg)
+![Mobile](./design/mobile_screenshot.jpg)
 
 ### Links
 
--   Challenge URL: [Results summary component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
--   Repository URL: [Github Repo](https://github.com/hornjbl/WebDev-FrontEndMentor/tree/main/newbie/003-results-summary-component-main/attempt-01)
--   Live Site URL: [Live site URL](https://hornjbl.github.io/WebDev-FrontEndMentor/newbie/003-results-summary-component-main/attempt-01/index.html)
+-   Challenge URL: [Order summary component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
+-   Repository URL: [Github Repo](https://github.com/hornjbl/WebDev-FrontEndMentor/tree/main/newbie/004-order-summary-component-main/004-02)
+-   Live Site URL: [Live site URL](https://hornjbl.github.io/WebDev-FrontEndMentor/newbie/004-order-summary-component-main/004-02/index.html)
+
 
 ## My process
 
