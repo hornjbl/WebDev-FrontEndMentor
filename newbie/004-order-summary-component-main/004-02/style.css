@@ -73,6 +73,7 @@ TODO
     border-radius: var(--border-radius-main);
     overflow: hidden;
     max-width: 21.5em;
+	min-width: 18.75em;
     box-shadow: 0 1.5em 2em var(--color-bright-blue-transparent);
 }
 
