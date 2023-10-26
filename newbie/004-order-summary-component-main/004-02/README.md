@@ -38,11 +38,11 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### To Do
 
--   [ ] View the optimal layout for the interface depending on their device's screen size
--   [ ] See hover and focus states for all interactive elements on the page
+-   [x] View the optimal layout for the interface depending on their device's screen size
+-   [x] See hover and focus states for all interactive elements on the page
 -   [x] **Bonus**: Use the local JSON data to dynamically populate the content
--	[ ] Width/height:
-	-   [ ] Be careful when using fixed widths or heights. Give preference to min/max width/height. (I again used height instead of min-height on the main container. This causes issues when the content starts getting bigger. NOTE TO SELF!)
+-	[x] Width/height:
+	-   [x] Be careful when using fixed widths or heights. Give preference to min/max width/height. (I again used height instead of min-height on the main container. This causes issues when the content starts getting bigger. NOTE TO SELF!)
 	-	[x] When specifying fixed or min/max sizing, give preference to relative units.
 	-	[x] Use dvh instead of vh.
 	-	[x] Do not set full width (100vw) because it is not necessary.
@@ -54,7 +54,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 -	[x] Ensure the image fits the element correctly.
 -	[x] Research and use a good standard reset.
 	-	[x] See [CREATE A CSS RESET STYLESHEET](https://www.youtube.com/watch?v=5e0wuvhxLk4)
--	[ ] Test the final result on mobile device, both landscape and portrait.
+-	[x] Test the final result on mobile device, both landscape and portrait.
 -	[ ] Research and implement "landscapes".
 	- 	[ ] See [Coding for Beginners: Using Aria Landmarks](https://www.youtube.com/watch?v=D3FpMIGGFXQ)
 	-	[ ] See [HTML Landmark Roles Screen Reader Demo](https://www.youtube.com/watch?v=zmVyUrhRoU0)
