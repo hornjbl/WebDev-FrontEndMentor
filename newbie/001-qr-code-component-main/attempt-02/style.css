@@ -1,0 +1,107 @@
+/* ====================================================================== */
+/* STANDARD CSS RESET START */
+/* ====================================================================== */
+*,
+*::before,
+*::after {
+    /* 1. Use a more-intuitive box-sizing model */
+    box-sizing: border-box;
+}
+* {
+    /* 2. Remove default margin */
+    margin: 0;
+}
+/* Typographic tweaks! */
+body {
+    /* 3. Add accessible line-height */
+    /* 4. Improve text rendering */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    /* 5. Improve media defaults */
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    /* 6. Remove built-in form typography styles */
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* 7. Avoid text overflows */
+    overflow-wrap: break-word;
+}
+#root,
+#__next {
+    /* 8. Create a root stacking context */
+    isolation: isolate;
+}
+/* ====================================================================== */
+/* STANDARD CSS RESET END */
+/* ====================================================================== */
+
+/* From FEM */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+	position: absolute;
+	bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* 
+# Front-end Style Guide
+-   Mobile: 375px
+-   Desktop: 1440px
+
+### Font
+
+-   Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+-   Weights: 400, 700
+*/
+
+:root {
+	/* COLORS */
+	--color-background: hsl(212, 38%, 87%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-light-gray: hsl(212, 45%, 89%);
+	--color-grayish-blue: hsl(220, 15%, 55%);
+	--color-dark-blue: hsl(218, 44%, 22%);
+
+	/* FONTS */
+	--font-size: 0.938rem;
+	--font-family-main: 'Outfit', sans-serif;
+}
+
+
+body {
+	background-color: var(--color-background);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-size: var(--font-size);
+	font-family: var(--font-family-main);
+}
+
+.component {
+	background-color: var(--color-white);
+	max-width: 320px;
+	text-align: center;
+}
