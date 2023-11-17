@@ -80,12 +80,16 @@ h6 {
 	--color-background: hsl(212, 38%, 87%);
 	--color-white: hsl(0, 0%, 100%);
 	--color-light-gray: hsl(212, 45%, 89%);
-	--color-grayish-blue: hsl(220, 15%, 55%);
-	--color-dark-blue: hsl(218, 44%, 22%);
+	--color-font-main: hsl(220, 15%, 55%);
+	--color-font-heading: hsl(218, 44%, 22%);
 
 	/* FONTS */
 	--font-size: 0.938rem;
 	--font-family-main: 'Outfit', sans-serif;
+
+	/* BORDERS */
+	--border-radius-outer: 1.25em;
+	--border-radius-inner: 0.75em;
 }
 
 
@@ -95,13 +99,33 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	font-size: var(--font-size);
-	font-family: var(--font-family-main);
+	height: 100svh;
 }
 
 .component {
 	background-color: var(--color-white);
-	max-width: 320px;
+	max-width: 21.25em;
 	text-align: center;
+	border-radius: var(--border-radius-outer);
+	padding: 1.05em;
+	font-size: var(--font-size);
+	font-family: var(--font-family-main);
+	color: var(--color-font-main);
+	line-height: 1.3;
+}
+
+.component h2 {
+	color: var(--color-font-heading);
+	margin: 1.05em 0.723em 0.75em 0.723em;
+}
+
+.component p {
+	margin: 0 0.8em 0 0.8em;
+	margin: 1.05em 0.8em 1.5em 0.8em;
+}
+
+.component-image {
+	/* width: 90%; */
+	border-radius: var(--border-radius-inner);
+	overflow: hidden;
 }
